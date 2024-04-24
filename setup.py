@@ -35,8 +35,10 @@ setup(
     url="https://github.com/timothyhtimothy/fast-vqa",
     include_package_data=True,
     packages=find_packages(
+        where=".",
         exclude=("demos", "examplar_data_labels", "results"),
     ),
+    package_dir={"": "."},
     package_data={"fastvqa": ["*.yml"]},
     classifiers=[
         "Development Status :: 4 - Beta",
