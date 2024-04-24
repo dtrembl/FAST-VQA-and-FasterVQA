@@ -34,9 +34,10 @@ setup(
     keywords="computer vision, video quality assessment",
     url="https://github.com/timothyhtimothy/fast-vqa",
     include_package_data=True,
-    packages=find_packages(exclude=("demos", "examplar_data_labels", "results"),
+    packages=find_packages(
+        exclude=("demos", "examplar_data_labels", "results"),
     ),
-    package_data={"fastvqa": ["*.yml"]}
+    package_data={"fastvqa": ["*.yml"]},
     classifiers=[
         "Development Status :: 4 - Beta",
         "License :: OSI Approved :: Apache Software License",
