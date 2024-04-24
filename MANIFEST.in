@@ -1,0 +1,7 @@
+include options/divide/*.yml
+include options/divide/ft/*.yml
+include options/fast/*.yml
+include options/finetune/*.yml
+include options/finetune/fast-3d/*.yml
+include options/finetune/fast-b/*.yml
+include options/finetune/mole/*.yml

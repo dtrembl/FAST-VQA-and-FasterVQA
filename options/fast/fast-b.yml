@@ -80,7 +80,7 @@ data:
                     aligned: 32
                     clip_len: 32
                     frame_interval: 2
-                    num_clips: 4 
+                    num_clips: 4
     val-l1080p:
         type: FusionDataset
         args:
@@ -99,25 +99,25 @@ data:
                     aligned: 32
                     clip_len: 32
                     frame_interval: 2
-                    num_clips: 4 
+                    num_clips: 4
 model:
     type: DiViDeAddEvaluator
     args:
         backbone:
             fragments:
                 checkpoint: false
-                pretrained: 
+                pretrained:
         backbone_size: swin_tiny_grpb
         backbone_preserve_keys: fragments
         divide_head: false
         vqa_head:
             in_channels: 768
             hidden_channels: 64
-            
+
 optimizer:
     lr: !!float 1e-3
     backbone_lr_mult: !!float 1e-1
     wd: 0.05
-        
+
 load_path: ../pretrained/swin_tiny_patch244_window877_kinetics400_1k.pth
-test_load_path: ./pretrained_weights/FAST_VQA_B_1*4.pth
+test_load_path: ./pretrained_weights/FAST_VQA_B_1_4.pth

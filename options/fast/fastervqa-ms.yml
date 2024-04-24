@@ -28,7 +28,7 @@ data:
                     frame_interval: 2
                     t_frag: 8
                     num_clips: 1
-                    
+
     val-livevqc:
         type: FusionDataset
         args:
@@ -45,7 +45,7 @@ data:
                     clip_len: 32 #32
                     frame_interval: 2
                     t_frag: 8 #8
-                    num_clips: 1 
+                    num_clips: 1
 
 
     val-l1080p:
@@ -65,7 +65,7 @@ data:
                     clip_len: 32 #32
                     frame_interval: 2
                     t_frag: 8 #8
-                    num_clips: 1            
+                    num_clips: 1
     val-ltest:
         type: FusionDataset
         args:
@@ -96,21 +96,21 @@ model:
         backbone:
             fragments:
                 checkpoint: false
-                pretrained: 
+                pretrained:
         backbone_size: swin_tiny_grpb
         backbone_preserve_keys: fragments
         divide_head: false
         vqa_head:
             in_channels: 768
             hidden_channels: 64
-            
+
 optimizer:
     lr: !!float 1e-3
     backbone_lr_mult: !!float 1e-1
     wd: 0.05
-        
-load_path: ../pretrained/swin_tiny_patch244_window877_kinetics400_1k.pth
-test_load_path: ./pretrained_weights/FAST_VQA_3D_1*1.pth
 
-    
-        
+load_path: ../pretrained/swin_tiny_patch244_window877_kinetics400_1k.pth
+test_load_path: ./pretrained_weights/FAST_VQA_3D_1_1.pth
+
+
+
