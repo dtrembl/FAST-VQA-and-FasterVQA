@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fastvqa
+Version: 1.0.0
+Summary: Very Efficient End-to-End VQA Toolbox
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: opencv-python
+Requires-Dist: decord
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: timm
+Requires-Dist: einops
+Requires-Dist: clip
+Requires-Dist: sk-video

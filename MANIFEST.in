@@ -1,9 +1,9 @@
 
-include fastvqa/options/fast/fast-b.yml
-include fastvqa/options/divide/*.yml
-include fastvqa/options/divide/ft/*.yml
-include fastvqa/options/fast/*.yml
-include fastvqa/options/finetune/*.yml
-include fastvqa/options/finetune/fast-3d/*.yml
-include fastvqa/options/finetune/fast-b/*.yml
-include fastvqa/options/finetune/mole/*.yml
+include src/fastvqa/options/fast/fast-b.yml
+include src/fastvqa/options/divide/*.yml
+include src/fastvqa/options/divide/ft/*.yml
+include src/fastvqa/options/fast/*.yml
+include src/fastvqa/options/finetune/*.yml
+include src/fastvqa/options/finetune/fast-3d/*.yml
+include src/fastvqa/options/finetune/fast-b/*.yml
+include src/fastvqa/options/finetune/mole/*.yml
