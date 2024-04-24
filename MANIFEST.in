@@ -1,3 +1,5 @@
+
+include fastvqa/options/fast/fast-b.yml
 include fastvqa/options/divide/*.yml
 include fastvqa/options/divide/ft/*.yml
 include fastvqa/options/fast/*.yml
