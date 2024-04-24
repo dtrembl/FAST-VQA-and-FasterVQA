@@ -37,7 +37,7 @@ setup(
     packages=find_packages(
         exclude=("demos", "examplar_data_labels", "results"),
     ),
-    package_data={"fastvqa_options": ["*.yml"]},
+    package_data={"fastvqa": ["*.yml"]},
     classifiers=[
         "Development Status :: 4 - Beta",
         "License :: OSI Approved :: Apache Software License",
